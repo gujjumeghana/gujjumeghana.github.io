@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <section id="contact" className="contact-section">
-      <p className="contact-eyebrow">04. What&apos;s Next?</p>
+      <p className="contact-eyebrow">What&apos;s Next?</p>
       <h2 className="contact-heading">Get In Touch</h2>
       <p className="contact-body">
         I&apos;m currently open to new opportunities. Whether you have a question, a project in
