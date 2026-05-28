@@ -17,7 +17,7 @@ export default function About() {
         <p>
           I build software that scales. From zero to{' '}
           <span className="about-highlight">1,000+ concurrent GPS-tracked vehicles</span>. From
-          idea to App Store. From prototype to production with{' '}
+          idea to implementation. From prototype to production with{' '}
           <span className="about-highlight">75% fewer defects</span>.
         </p>
         <p>

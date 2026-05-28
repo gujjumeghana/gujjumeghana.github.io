@@ -277,6 +277,7 @@ section {
   line-height: 1.75;
   margin-bottom: 1rem;
   font-size: var(--fz-md);
+  text-align: justify;
 }
 
 .about-text p:last-child {
@@ -386,6 +387,7 @@ section {
   font-size: var(--fz-sm);
   line-height: 1.7;
   margin-bottom: 0.75rem;
+  text-align: justify;
 }
 
 .tech-tags {

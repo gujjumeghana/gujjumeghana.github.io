@@ -64,10 +64,8 @@ export default function Experience() {
           <li key={i} className="experience-item">
             <div className="exp-year">{item.year}</div>
             <div className="exp-body">
-              <h3 className="exp-title">
-                {item.title} · {item.company}
-              </h3>
-              <p className="exp-company">{item.location}</p>
+              <h3 className="exp-title">{item.title}</h3>
+              <h4 className="exp-company">{item.company} · {item.location}</h4>
               <p className="exp-description">{item.description}</p>
               <ul className="tech-tags">
                 {item.tags.map((tag) => (
