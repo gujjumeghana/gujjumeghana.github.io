@@ -3,13 +3,13 @@ const experience = [
     year: 'May 2025 — May 2026',
     title: 'Research Assistant',
     company: 'New Jersey Institute of Technology',
-    location: 'Newark, NJ',
+    location: 'Newark, NJ, USA',
     description:
       'Built MAMS, a full-stack Django web app applying single-year and multi-year optimization algorithms to allocate dredging budgets across waterway channels, delivering scenario-based analytics to decision-makers.',
-    tags: ['Django', 'Python', 'Full-Stack', 'Optimization'],
+    tags: ['Django', 'Python', 'Full-Stack', 'Maritime Infrastructure'],
   },
   {
-    year: 'Feb — Aug 2024',
+    year: 'Feb 2024 — Aug 2024',
     title: 'Software Engineer / Solution Architect',
     company: 'C and S Technologies Pvt. Ltd.',
     location: 'Hyderabad, India',
@@ -27,22 +27,22 @@ const experience = [
     tags: ['Flutter', 'React.js', 'Firebase', 'WebSocket', 'Android', 'iOS'],
   },
   {
-    year: 'Aug — Dec 2023',
+    year: 'Aug 2023 — Dec 2023',
     title: 'Mobile & Backend Developer',
     company: 'Turing Enterprises, Inc.',
     location: 'Remote',
     description:
       'Integrated CometChat SDK into a Flutter app for real-time messaging and push notifications; implemented OAuth 2 social login (Google, Meta, Apple) with secure token exchange. Built a fault-tolerant Stripe payment microservice in FastAPI and a BERT-based sentiment analysis API — achieving 100% transaction success under 100+ concurrent requests and increasing feedback response rates by 48%.',
-    tags: ['Flutter', 'FastAPI', 'Stripe', 'BERT', 'OAuth 2', 'CometChat'],
+    tags: ['Flutter', 'Django', 'ML/AI', 'FastAPI', 'Stripe', 'BERT', 'OAuth 2', 'CometChat'],
   },
   {
-    year: 'Mar — Oct 2022',
+    year: 'Mar 2022 — Oct 2022',
     title: 'Software Development Engineer II',
     company: 'NonStop io Technologies Pvt. Ltd.',
     location: 'Pune, India',
     description:
       'Built a hybrid geolocation engine in React Native with GPS polling, geofencing, and adaptive sampling, achieving 90% location accuracy and contributing to a 25% NPS increase. Improved app responsiveness by 34% via Firebase Analytics-driven query tuning and reduced re-renders. Built GitHub Actions CI/CD pipelines with Docker, cutting deployment time by 30% and improving SonarQube pass rate by 15%.',
-    tags: ['React Native', 'Firebase', 'Docker', 'GitHub Actions', 'JWT'],
+    tags: ['React Native', 'Flutter', 'Firebase', 'Docker', 'GitHub Actions', 'JWT'],
   },
   {
     year: 'Mar 2021 — Mar 2022',
