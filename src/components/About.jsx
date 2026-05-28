@@ -22,7 +22,7 @@ export default function About() {
         </p>
         <p>
           I&apos;m Meghana Gujju — a Full-Stack &amp; Mobile Engineer with{' '}
-          <span className="about-highlight">8+ years</span> across Flutter, React Native,
+          <span className="about-highlight">9+ years</span> across Flutter, React Native,
           Node.js, Firebase, and everything in between. I&apos;ve co-founded a transport tech
           startup, architected real-time IoT systems, integrated ML inference on-device, and
           shipped payment flows that handle hundreds of concurrent transactions without breaking
