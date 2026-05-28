@@ -15,34 +15,27 @@ export default function About() {
       <h2 className="section-label">About</h2>
       <div className="about-text">
         <p>
-          I&apos;m a Software Engineer with over 5 years of experience in mobile app and
-          full-stack development, specializing in AI-driven applications and secure software
-          solutions. Recently graduated from {' '}
+          I build software that scales. From zero to{' '}
+          <span className="about-highlight">1,000+ concurrent GPS-tracked vehicles</span>. From
+          idea to App Store. From prototype to production with{' '}
+          <span className="about-highlight">75% fewer defects</span>.
+        </p>
+        <p>
+          I&apos;m Meghana Gujju — a Full-Stack &amp; Mobile Engineer with{' '}
+          <span className="about-highlight">9+ years</span> across Flutter, React Native,
+          Node.js, Firebase, and everything in between. I&apos;ve co-founded a transport tech
+          startup, architected real-time IoT systems, integrated ML inference on-device, and
+          shipped payment flows that handle hundreds of concurrent transactions without breaking
+          a sweat.
+        </p>
+        <p>
+          Currently finishing my{' '}
           <a href="https://www.njit.edu" target="_blank" rel="noreferrer">
-            New Jersey Institute of Technology
-          </a> {' '}
-          with {' '}
-          <a href="https://www.njit.edu" target="_blank" rel="noreferrer">
-            MS in Computer Science
+            MS in Computer Science at NJIT
           </a>{' '}
-          , I thrive on building scalable systems with a focus on CI/CD pipelines and Agile
-          methodologies.
-        </p>
-        <p>
-          As Co-Founder of{' '}
-          <span className="about-highlight">Plexus Transport Services</span>, I led the
-          development of real-time GPS fleet management solutions, architecting cross-platform
-          mobile apps and backend services that optimized operations for hundreds of clients.
-        </p>
-        <p>
-          I&apos;ve engineered applications with advanced features like{' '}
-          <span className="about-highlight">NLP-powered sentiment analysis</span>, hybrid
-          geolocation strategies, and fault-tolerant payment systems — consistently improving
-          performance and user experience.
-        </p>
-        <p>
-          Outside of work, I enjoy exploring new cuisines, playing chess, and I represented my
-          university in lawn tennis during my bachelor&apos;s degree.
+          while researching full-stack optimization systems as a Research Assistant. I&apos;m
+          based in Newark, NJ and open to senior engineering roles where the problems are hard
+          and the impact is real.
         </p>
       </div>
 
