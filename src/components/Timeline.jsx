@@ -1,55 +1,100 @@
-const timelineItems = [
+const experience = [
   {
-    duration: 'March 2016 - August 2024',
-    title: 'Director/Co-Founder in Plexus Transport Services Pvt. Ltd.',
-    location: 'Hyderabad, Telangana, India',
+    year: '2016 — 2024',
+    title: 'Director & Co-Founder',
+    company: 'Plexus Transport Services Pvt. Ltd.',
+    location: 'Hyderabad, India',
+    description:
+      'Led end-to-end development of a real-time GPS fleet management platform serving hundreds of clients. Architected cross-platform mobile apps, built scalable Node.js backend services, and implemented CI/CD pipelines that reduced deployment time by 60%.',
+    tags: ['Flutter', 'React Native', 'Node.js', 'Firebase', 'AWS', 'Android', 'iOS'],
   },
   {
-    duration: 'February 2024 - August 2024',
-    title: 'Software Engineer at C and S Technologies',
-    location: 'Hyderabad, Telangana, India',
+    year: 'Feb — Aug 2024',
+    title: 'Software Engineer',
+    company: 'C and S Technologies',
+    location: 'Hyderabad, India',
+    description:
+      'Developed and maintained full-stack web applications, building RESTful APIs with Django and FastAPI alongside React.js frontends. Delivered features across the product lifecycle from design to deployment.',
+    tags: ['Python', 'Django', 'FastAPI', 'React.js', 'PostgreSQL'],
   },
   {
-    duration: 'August 2023 - December 2023',
-    title: 'Mobile Developer at Turing',
+    year: 'Aug — Dec 2023',
+    title: 'Mobile Developer',
+    company: 'Turing',
     location: 'Remote',
+    description:
+      'Contracted mobile developer building high-performance React Native applications for international clients, with a focus on performance optimization and seamless cross-platform UX.',
+    tags: ['React Native', 'TypeScript', 'Redux', 'REST APIs'],
   },
   {
-    duration: 'March 2022 - October 2022',
-    title: 'Software Development Engineer-II at NonStop io Technologies Pvt. Ltd.',
-    location: 'Pune, Maharashtra, India',
+    year: 'Mar — Oct 2022',
+    title: 'Software Development Engineer II',
+    company: 'NonStop io Technologies Pvt. Ltd.',
+    location: 'Pune, India',
+    description:
+      'Built and shipped multiple Flutter mobile applications featuring advanced geolocation strategies, hybrid offline support, and fault-tolerant payment system integrations.',
+    tags: ['Flutter', 'Dart', 'Firebase', 'Google Maps SDK', 'Stripe'],
   },
   {
-    duration: 'March 2021 - March 2022',
-    title: 'Flutter Developer at Around29 Digital Media Solutions',
-    location: 'Hyderabad, Telangana, India',
+    year: 'Mar 2021 — Mar 2022',
+    title: 'Flutter Developer',
+    company: 'Around29 Digital Media Solutions',
+    location: 'Hyderabad, India',
+    description:
+      'Developed cross-platform Flutter applications with NLP-powered sentiment analysis features and real-time data synchronization, improving user engagement metrics.',
+    tags: ['Flutter', 'Dart', 'NLP', 'Firebase', 'Python'],
   },
 ]
 
-export default function Timeline({ active }) {
+export default function Experience() {
   return (
-    <section className={`container${active ? ' active' : ''}`} id="portfolio">
-      <div className="main-title">
-        <br />
-        <h2>
-          <a>MY</a> <span>TIMELINE</span>
-          <span className="bg-text">WORK</span>
-        </h2>
-      </div>
-      <br /><br /><br /><br />
-      <div className="timeline">
-        {timelineItems.map((item, index) => (
-          <div className="timeline-item" key={index}>
-            <div className="tl-icon">
-              <i className="fas fa-briefcase"></i>
+    <section id="experience">
+      <h2 className="section-label">Experience</h2>
+      <ol className="experience-list">
+        {experience.map((item, i) => (
+          <li key={i} className="experience-item">
+            <div className="exp-year">{item.year}</div>
+            <div className="exp-body">
+              <h3 className="exp-title">
+                {item.title} · {item.company}
+              </h3>
+              <p className="exp-company">{item.location}</p>
+              <p className="exp-description">{item.description}</p>
+              <ul className="tech-tags">
+                {item.tags.map((tag) => (
+                  <li key={tag} className="tech-tag">
+                    {tag}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <p className="tl-duration">{item.duration}</p>
-            <h5>
-              {item.title} <span> - {item.location}</span>
-            </h5>
-          </div>
+          </li>
         ))}
-      </div>
+      </ol>
+
+      <a
+        href="/resume.pdf"
+        target="_blank"
+        rel="noreferrer"
+        className="resume-link"
+      >
+        View Full Resume
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <line x1="7" y1="17" x2="17" y2="7" />
+          <polyline points="7 7 17 7 17 17" />
+        </svg>
+      </a>
     </section>
   )
 }

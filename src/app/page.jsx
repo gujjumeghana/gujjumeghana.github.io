@@ -1,31 +1,58 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Header from '@/components/Header'
+import Sidebar from '@/components/Header'
 import About from '@/components/About'
-import Timeline from '@/components/Timeline'
+import Experience from '@/components/Timeline'
 import Contact from '@/components/Contact'
-import Controls from '@/components/Controls'
+import ThemeToggle from '@/components/ThemeToggle'
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState('home')
-  const [lightMode, setLightMode] = useState(false)
+  const [activeSection, setActiveSection] = useState('about')
+  const [mousePos, setMousePos] = useState({ x: '50%', y: '50%' })
 
   useEffect(() => {
-    document.body.classList.toggle('light-mode', lightMode)
-  }, [lightMode])
+    const handleMouseMove = (e) => {
+      setMousePos({ x: `${e.clientX}px`, y: `${e.clientY}px` })
+    }
+    window.addEventListener('mousemove', handleMouseMove)
+    return () => window.removeEventListener('mousemove', handleMouseMove)
+  }, [])
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActiveSection(entry.target.id)
+        })
+      },
+      { rootMargin: '-20% 0px -60% 0px', threshold: 0 }
+    )
+    const ids = ['about', 'experience', 'contact']
+    ids.forEach((id) => {
+      const el = document.getElementById(id)
+      if (el) observer.observe(el)
+    })
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <>
-      <Header active={activeSection === 'home'} />
-      <main>
-        <About active={activeSection === 'about'} />
-        <Timeline active={activeSection === 'portfolio'} />
-        <Contact active={activeSection === 'contact'} />
-      </main>
-      <Controls activeSection={activeSection} setActiveSection={setActiveSection} />
-      <div className="theme-btn" onClick={() => setLightMode(prev => !prev)}>
-        <i className="fas fa-adjust"></i>
+      <ThemeToggle />
+      <div
+        className="cursor-glow"
+        style={{
+          '--mouse-x': mousePos.x,
+          '--mouse-y': mousePos.y,
+        }}
+      />
+      <div className="layout">
+        <Sidebar activeSection={activeSection} />
+        <main className="main-content">
+          <About />
+          <Experience />
+          <Contact />
+        </main>
       </div>
     </>
   )

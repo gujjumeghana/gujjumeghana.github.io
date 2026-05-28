@@ -1,15 +1,15 @@
-import { Poppins } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 
-const poppins = Poppins({
-  weight: ['400', '500', '600', '700', '800'],
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
 })
 
 export const metadata = {
-  title: 'Portfolio - Meghana Gujju',
+  title: 'Meghana Gujju — Software Engineer',
+  description: 'Software engineer specializing in mobile, full-stack, and AI-powered applications.',
 }
 
 export default function RootLayout({ children }) {
@@ -23,12 +23,8 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
-        />
       </head>
-      <body className={`${poppins.className} main-content`}>
+      <body className={inter.className}>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-49V0BMZST0"
           strategy="afterInteractive"

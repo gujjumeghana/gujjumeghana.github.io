@@ -1,30 +1,70 @@
-export default function Header({ active }) {
+'use client'
+
+const navItems = [
+  { id: 'about', label: 'About' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'contact', label: 'Contact' },
+]
+
+export default function Sidebar({ activeSection }) {
+  const scrollTo = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
-    <header className={`container header${active ? ' active' : ''}`} id="home">
-      <div className="header-content">
-        <div className="left-header">
-          <div className="h-shape"></div>
-          <div className="image">
-            <img src="/img/meghana.jpg" alt="Meghana Gujju" />
-          </div>
-        </div>
-        <div className="right-header">
-          <h1 className="name">
-            Hi, I&apos;m <span>Meghana Gujju.</span>
-          </h1>
-          <p>
-            I&apos;m a Graduate Student in CS at NJIT | SDE | Mobile App &amp; Full Stack Developer
+    <aside className="sidebar">
+      <div className="sidebar-top">
+        <div className="sidebar-header">
+          <h1 className="name">Meghana Gujju</h1>
+          <h2 className="title">Software Engineer</h2>
+          <p className="tagline">
+            I build scalable mobile apps, full-stack systems, and AI-powered solutions.
           </p>
-          <div className="btn-con">
-            <a href="/Resume.pdf" className="main-btn">
-              <span className="btn-text">Resume</span>
-              <span className="btn-icon">
-                <i className="fas fa-download"></i>
-              </span>
-            </a>
-          </div>
         </div>
+
+        <nav className="sidebar-nav" aria-label="In-page navigation">
+          {navItems.map(({ id, label }) => (
+            <div key={id} className="nav-item">
+              <a
+                onClick={() => scrollTo(id)}
+                className={activeSection === id ? 'active' : ''}
+                aria-current={activeSection === id ? 'true' : undefined}
+              >
+                <span className="nav-line" />
+                {label}
+              </a>
+            </div>
+          ))}
+        </nav>
       </div>
-    </header>
+
+      <div className="sidebar-socials">
+        <a
+          href="https://github.com/gujjumeghana"
+          target="_blank"
+          rel="noreferrer"
+          className="social-link"
+          aria-label="GitHub"
+        >
+          <i className="fab fa-github" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/meghanagujju/"
+          target="_blank"
+          rel="noreferrer"
+          className="social-link"
+          aria-label="LinkedIn"
+        >
+          <i className="fab fa-linkedin-in" />
+        </a>
+        <a
+          href="mailto:meghana.gujju@gmail.com"
+          className="social-link"
+          aria-label="Email"
+        >
+          <i className="fas fa-envelope" />
+        </a>
+      </div>
+    </aside>
   )
 }
