@@ -1,11 +1,11 @@
 const skills = [
-  'Flutter / Dart',
-  'React Native',
-  'TypeScript / JavaScript',
-  'Node.js / Express',
-  'Python / FastAPI',
-  'AWS / GCP / Firebase',
-  'Docker / CI/CD',
+  'Flutter / React Native',
+  'React.js / TypeScript',
+  'Node.js / Django / FastAPI',
+  'Python / Java / Dart',
+  'Firebase / AWS / GCP',
+  'PostgreSQL / MongoDB / Redis',
+  'Docker / GitHub Actions',
   'Android / iOS',
 ]
 

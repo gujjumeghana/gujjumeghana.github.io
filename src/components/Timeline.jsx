@@ -1,30 +1,39 @@
 const experience = [
   {
-    year: '2016 — 2024',
-    title: 'Director & Co-Founder',
-    company: 'Plexus Transport Services Pvt. Ltd.',
-    location: 'Hyderabad, India',
+    year: 'May 2025 — May 2026',
+    title: 'Research Assistant',
+    company: 'New Jersey Institute of Technology',
+    location: 'Newark, NJ',
     description:
-      'Led end-to-end development of a real-time GPS fleet management platform serving hundreds of clients. Architected cross-platform mobile apps, built scalable Node.js backend services, and implemented CI/CD pipelines that reduced deployment time by 60%.',
-    tags: ['Flutter', 'React Native', 'Node.js', 'Firebase', 'AWS', 'Android', 'iOS'],
+      'Built MAMS, a full-stack Django web app applying single-year and multi-year optimization algorithms to allocate dredging budgets across waterway channels, delivering scenario-based analytics to decision-makers.',
+    tags: ['Django', 'Python', 'Full-Stack', 'Optimization'],
   },
   {
     year: 'Feb — Aug 2024',
-    title: 'Software Engineer',
-    company: 'C and S Technologies',
+    title: 'Software Engineer / Solution Architect',
+    company: 'C and S Technologies Pvt. Ltd.',
     location: 'Hyderabad, India',
     description:
-      'Developed and maintained full-stack web applications, building RESTful APIs with Django and FastAPI alongside React.js frontends. Delivered features across the product lifecycle from design to deployment.',
-    tags: ['Python', 'Django', 'FastAPI', 'React.js', 'PostgreSQL'],
+      'Built an on-device body measurement pipeline in Flutter using Firebase ML Kit and TensorFlow Lite, achieving sub-200ms inference latency with zero server round-trips. Designed an offline-first e-commerce platform with Firestore, RESTful APIs, and PayPal integration; built a personalized recommendation engine mapping body measurements to garment SKUs.',
+    tags: ['Flutter', 'Firebase ML Kit', 'TensorFlow Lite', 'Firestore', 'PayPal'],
+  },
+  {
+    year: 'Mar 2016 — Aug 2024',
+    title: 'Director / Co-Founder (Technical Lead)',
+    company: 'Plexus Transport Services Pvt. Ltd.',
+    location: 'Hyderabad, India',
+    description:
+      'Founded and architected Pleasehorn, a real-time GPS fleet tracking platform for Android and iOS, scaling to 1,000+ vehicles using Firebase with live telemetry dashboards. Re-engineered the GPS telemetry ingestion pipeline with Firebase batch writes and connection pooling, cutting real-time data processing latency by 24%. Built a React.js operational dashboard with live WebSocket telemetry streams, increasing customer satisfaction by 40%.',
+    tags: ['Flutter', 'React.js', 'Firebase', 'WebSocket', 'Android', 'iOS'],
   },
   {
     year: 'Aug — Dec 2023',
-    title: 'Mobile Developer',
-    company: 'Turing',
+    title: 'Mobile & Backend Developer',
+    company: 'Turing Enterprises, Inc.',
     location: 'Remote',
     description:
-      'Contracted mobile developer building high-performance React Native applications for international clients, with a focus on performance optimization and seamless cross-platform UX.',
-    tags: ['React Native', 'TypeScript', 'Redux', 'REST APIs'],
+      'Integrated CometChat SDK into a Flutter app for real-time messaging and push notifications; implemented OAuth 2 social login (Google, Meta, Apple) with secure token exchange. Built a fault-tolerant Stripe payment microservice in FastAPI and a BERT-based sentiment analysis API — achieving 100% transaction success under 100+ concurrent requests and increasing feedback response rates by 48%.',
+    tags: ['Flutter', 'FastAPI', 'Stripe', 'BERT', 'OAuth 2', 'CometChat'],
   },
   {
     year: 'Mar — Oct 2022',
@@ -32,17 +41,17 @@ const experience = [
     company: 'NonStop io Technologies Pvt. Ltd.',
     location: 'Pune, India',
     description:
-      'Built and shipped multiple Flutter mobile applications featuring advanced geolocation strategies, hybrid offline support, and fault-tolerant payment system integrations.',
-    tags: ['Flutter', 'Dart', 'Firebase', 'Google Maps SDK', 'Stripe'],
+      'Built a hybrid geolocation engine in React Native with GPS polling, geofencing, and adaptive sampling, achieving 90% location accuracy and contributing to a 25% NPS increase. Improved app responsiveness by 34% via Firebase Analytics-driven query tuning and reduced re-renders. Built GitHub Actions CI/CD pipelines with Docker, cutting deployment time by 30% and improving SonarQube pass rate by 15%.',
+    tags: ['React Native', 'Firebase', 'Docker', 'GitHub Actions', 'JWT'],
   },
   {
     year: 'Mar 2021 — Mar 2022',
-    title: 'Flutter Developer',
+    title: 'Flutter Developer / Full-Stack Developer',
     company: 'Around29 Digital Media Solutions',
     location: 'Hyderabad, India',
     description:
-      'Developed cross-platform Flutter applications with NLP-powered sentiment analysis features and real-time data synchronization, improving user engagement metrics.',
-    tags: ['Flutter', 'Dart', 'NLP', 'Firebase', 'Python'],
+      'Built Flutter and React Native apps integrating Google Maps, Firebase Realtime Database, and Razorpay; improved First Contentful Paint by 28% via code splitting, lazy loading, and data prefetching. Achieved 99.99% test coverage on critical modules using Jest; integrated Crashlytics for real-time crash reporting, driving a 75% reduction in production defects.',
+    tags: ['Flutter', 'React Native', 'Google Maps', 'Razorpay', 'Firebase', 'Jest'],
   },
 ]
 
