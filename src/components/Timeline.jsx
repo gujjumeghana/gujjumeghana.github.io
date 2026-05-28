@@ -73,12 +73,11 @@ export default function Experience() {
       </ol>
 
       <a
-        href="/resume.pdf"
-        target="_blank"
-        rel="noreferrer"
+        href="/Resume.pdf"
+        download="Meghana_Gujju_Resume.pdf"
         className="resume-link"
       >
-        View Full Resume
+        Download Resume
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="14"
